@@ -66,13 +66,33 @@ The theme includes backdrop blur effects that work on Zen's internal pages (sett
 
 ## Screenshots
 
-*Add your screenshots here showing:*
-- Clean urlbar with 90% opacity
-- Transparent dropdown menus
-- Right-click context menu with no background
-- Downloads panel
-- Status bar link preview
-- Essentials/pinned tabs with active highlight
+### GitHub Repository
+![GitHub Repository](screenshots/github-repo.png)
+*Clean GitHub interface with Gruvbox colors*
+
+### URL Dropdown Search
+![URL Dropdown](screenshots/url-dropdown.png)
+*Transparent dropdown with no background boxes*
+
+### Context Menu
+![Right-Click Menu](screenshots/context-menu.png)
+*Clean right-click menu with transparent background*
+
+### Hamburger Menu
+![Hamburger Menu](screenshots/hamburger-menu.png)
+*Browser menu with clean styling*
+
+### Downloads Panel
+![Downloads Panel](screenshots/downloads-panel.png)
+*Transparent downloads panel*
+
+### YouTube
+![YouTube](screenshots/youtube.png)
+*YouTube with 90% opacity urlbar*
+
+### Other Websites
+![W3Schools Example](screenshots/w3schools.png)
+*Theme works consistently across all websites*
 
 ## Compatibility
 
