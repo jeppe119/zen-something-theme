@@ -1,0 +1,609 @@
+/*
+ * Gruvbox Dark Theme for Zen Browser
+ */
+
+:root {
+    /* Main colors */
+    --custom-bg-dark: #191c1c;
+    --custom-bg-darker: #1d2021;
+    --custom-bg-light: #282828;
+    --custom-bg1: #3c3836;
+    --custom-bg2: #504945;
+    --custom-bg3: #665c54;
+    --custom-bg4: #7c6f64;
+
+    /* Foreground colors */
+    --custom-fg0: #fbf1c7;
+    --custom-fg1: #ebdbb2;
+    --custom-fg2: #d5c4a1;
+    --custom-fg3: #bdae93;
+    --custom-fg4: #a89984;
+
+    /* Accent colors */
+    --custom-red: #fb4934;
+    --custom-green: #b8bb26;
+    --custom-yellow: #fabd2f;
+    --custom-blue: #83a598;
+    --custom-purple: #d3869b;
+    --custom-aqua: #8ec07c;
+    --custom-orange: #fe8019;
+    --custom-gray: #928374;
+    --custom-selection: #b58900;
+}
+
+/* Main browser colors */
+:root {
+    --toolbar-bgcolor: var(--custom-bg-dark) !important;
+    --toolbar-color: var(--custom-fg1) !important;
+    --lwt-accent-color: var(--custom-bg-darker) !important;
+    --lwt-text-color: var(--custom-fg1) !important;
+    --lwt-selected-tab-background-color: var(--custom-bg1) !important;
+
+    /* Sidebar */
+    --lwt-sidebar-background-color: var(--custom-bg-dark) !important;
+    --lwt-sidebar-text-color: var(--custom-fg1) !important;
+
+    /* Tabs */
+    --tab-selected-bgcolor: var(--custom-bg1) !important;
+    --tab-selected-textcolor: var(--custom-fg0) !important;
+
+    /* URL bar */
+    --toolbar-field-background-color: var(--custom-bg-darker) !important;
+    --toolbar-field-color: var(--custom-fg1) !important;
+    --toolbar-field-border-color: var(--custom-bg3) !important;
+    --toolbar-field-focus-background-color: var(--custom-bg-light) !important;
+    --toolbar-field-focus-border-color: var(--custom-bg4) !important;
+
+    /* Popups and panels */
+    --arrowpanel-background: var(--custom-bg-light) !important;
+    --arrowpanel-color: var(--custom-fg1) !important;
+    --arrowpanel-border-color: var(--custom-bg3) !important;
+    --panel-background: var(--custom-bg-light) !important;
+    --panel-color: var(--custom-fg1) !important;
+    --panel-border-color: var(--custom-bg3) !important;
+
+    /* Buttons */
+    --button-bgcolor: var(--custom-bg1) !important;
+    --button-color: var(--custom-fg1) !important;
+    --button-hover-bgcolor: var(--custom-bg2) !important;
+    --button-active-bgcolor: var(--custom-bg3) !important;
+
+    /* Toolbar buttons */
+    --lwt-toolbarbutton-icon-fill: var(--custom-fg2) !important;
+    --lwt-toolbarbutton-icon-fill-attention: var(--custom-orange) !important;
+    --lwt-toolbarbutton-hover-background: var(--custom-bg1) !important;
+    --lwt-toolbarbutton-active-background: var(--custom-bg2) !important;
+
+    /* Active tab indicator */
+    --tab-line-color: var(--custom-aqua) !important;
+
+    /* Scrollbars */
+    --lwt-scrollbar-color: var(--custom-bg3) var(--custom-bg-dark) !important;
+}
+
+/* Main browser background */
+#main-window,
+#browser,
+#navigator-toolbox {
+    background-color: var(--custom-bg-dark) !important;
+}
+
+/* Toolbar */
+#navigator-toolbox {
+    border-bottom: 1px solid var(--custom-bg2) !important;
+}
+
+#nav-bar {
+    background-color: var(--custom-bg-dark) !important;
+}
+
+/* Tab bar background */
+#TabsToolbar,
+#tabbrowser-tabs {
+    background-color: var(--custom-bg-dark) !important;
+}
+
+/* Individual tabs */
+.tabbrowser-tab {
+    background-color: transparent !important;
+    color: var(--custom-fg3) !important;
+}
+
+.tabbrowser-tab:hover:not([selected="true"]) {
+    background-color: var(--custom-bg-darker) !important;
+    color: var(--custom-fg2) !important;
+}
+
+/* Active/selected tab */
+.tabbrowser-tab[selected="true"] {
+    background-color: var(--custom-bg1) !important;
+    color: var(--custom-fg0) !important;
+    font-weight: 600 !important;
+}
+
+.tabbrowser-tab[selected="true"] .tab-background {
+    background-color: var(--custom-bg1) !important;
+}
+
+/* Tab text */
+.tab-text {
+    color: inherit !important;
+}
+
+/* URL bar - transparent with blur */
+#urlbar,
+#urlbar-background,
+#searchbar {
+    background-color: transparent !important;
+    background: none !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border: none !important;
+    border-radius: 8px !important;
+}
+
+/* Remove inner urlbar box */
+#urlbar-input-container,
+.urlbar-input-box,
+#urlbar-search-mode-indicator,
+.urlbar-search-mode-indicator {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Force remove all urlbar internal boxes */
+#urlbar > #urlbar-background,
+#urlbar > #urlbar-input-container,
+moz-input-box,
+#urlbar input,
+#urlbar textbox {
+    background-color: transparent !important;
+    background-image: none !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+}
+
+#urlbar-input,
+.searchbar-textbox {
+    color: var(--custom-fg1) !important;
+}
+
+#urlbar[focused="true"],
+#searchbar[focused="true"] {
+    background: none !important;
+    backdrop-filter: blur(25px) !important;
+    -webkit-backdrop-filter: blur(25px) !important;
+    border: none !important;
+}
+
+/* URL bar dropdown */
+#urlbar-results,
+.urlbarView {
+    background: none !important;
+    background-color: transparent !important;
+    color: var(--custom-fg1) !important;
+    border: none !important;
+    border-radius: 8px !important;
+    margin-top: 8px !important;
+    box-shadow: none !important;
+}
+
+.urlbarView-row {
+    background-color: transparent !important;
+    color: var(--custom-fg1) !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 6px 8px !important;
+}
+
+.urlbarView-row[selected],
+.urlbarView-row:hover {
+    background: none !important;
+    color: var(--custom-fg0) !important;
+    border: none !important;
+}
+
+/* Remove all dropdown row backgrounds */
+.urlbarView-row *,
+.urlbarView-row-inner,
+.urlbarView-url,
+.urlbarView-title {
+    background: none !important;
+    border: none !important;
+}
+
+/* Sidebar */
+#sidebar-box,
+#sidebar,
+#sidebar-header {
+    background-color: var(--custom-bg-dark) !important;
+    color: var(--custom-fg1) !important;
+    border-right: 1px solid var(--custom-bg2) !important;
+}
+
+/* Zen-specific sidebar */
+#zen-sidebar-web-panel,
+#zen-sidebar,
+.zen-sidebar {
+    background-color: var(--custom-bg-dark) !important;
+}
+
+/* Vertical tabs (Zen-specific) */
+.zen-compact-tab,
+.tabbrowser-tab[zen-essential="true"] {
+    background-color: transparent !important;
+    color: var(--custom-fg3) !important;
+}
+
+.zen-compact-tab:hover:not([selected="true"]),
+.tabbrowser-tab[zen-essential="true"]:hover:not([selected="true"]) {
+    background-color: var(--custom-bg-darker) !important;
+}
+
+.zen-compact-tab[selected="true"],
+.tabbrowser-tab[zen-essential="true"][selected="true"] {
+    background-color: var(--custom-bg1) !important;
+    color: var(--custom-fg0) !important;
+}
+
+/* Context menus and popups */
+menupopup,
+panel,
+.panel-arrowcontent {
+    background: none !important;
+    background-color: transparent !important;
+    color: var(--custom-fg1) !important;
+    border: none !important;
+}
+
+menuitem,
+menu {
+    color: var(--custom-fg1) !important;
+    background: none !important;
+}
+
+menuitem:hover,
+menu:hover,
+menuitem[_moz-menuactive="true"],
+menu[_moz-menuactive="true"] {
+    background-color: var(--custom-bg1) !important;
+    color: var(--custom-fg0) !important;
+}
+
+menuseparator {
+    border-color: var(--custom-bg3) !important;
+}
+
+/* Bookmarks toolbar */
+#PersonalToolbar {
+    background-color: var(--custom-bg-dark) !important;
+    border-top: 1px solid var(--custom-bg2) !important;
+}
+
+.bookmark-item {
+    color: var(--custom-fg2) !important;
+}
+
+.bookmark-item:hover {
+    background-color: var(--custom-bg1) !important;
+    color: var(--custom-fg0) !important;
+    border-radius: 4px !important;
+}
+
+/* Buttons */
+button,
+toolbarbutton {
+    background-color: var(--custom-bg1) !important;
+    color: var(--custom-fg1) !important;
+    border: 1px solid var(--custom-bg3) !important;
+    border-radius: 4px !important;
+}
+
+button:hover,
+toolbarbutton:hover {
+    background-color: var(--custom-bg2) !important;
+    border-color: var(--custom-bg4) !important;
+}
+
+button:active,
+toolbarbutton:active,
+button[open="true"],
+toolbarbutton[open="true"] {
+    background-color: var(--custom-bg3) !important;
+}
+
+/* Scrollbars */
+scrollbar {
+    background-color: var(--custom-bg-dark) !important;
+}
+
+scrollbar thumb {
+    background-color: var(--custom-bg3) !important;
+    border-radius: 6px !important;
+}
+
+scrollbar thumb:hover {
+    background-color: var(--custom-bg4) !important;
+}
+
+/* Find bar */
+findbar {
+    background-color: var(--custom-bg-light) !important;
+    color: var(--custom-fg1) !important;
+    border: 1px solid var(--custom-bg3) !important;
+}
+
+.findbar-textbox {
+    background-color: var(--custom-bg-darker) !important;
+    color: var(--custom-fg1) !important;
+    border: 1px solid var(--custom-bg3) !important;
+}
+
+/* Status panel (link preview) */
+#statuspanel {
+    background-color: rgba(29, 32, 33, 0.9) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    color: var(--custom-fg1) !important;
+    border: none !important;
+    border-radius: 4px !important;
+    padding: 2px 6px !important;
+}
+
+#statuspanel-label {
+    background: none !important;
+    background-color: transparent !important;
+    color: var(--custom-fg1) !important;
+}
+
+/* Notification bar */
+notification,
+.notificationbox-stack {
+    background-color: var(--custom-bg-light) !important;
+    color: var(--custom-fg1) !important;
+    border: 1px solid var(--custom-bg3) !important;
+}
+
+/* Downloads panel */
+#downloadsPanel,
+#downloadsPanel-mainView,
+#downloadsPanel-multiView,
+#downloadsListBox,
+.downloadsPanelFooter,
+.downloadsPanelFooterButton {
+    background: none !important;
+    background-color: transparent !important;
+    color: var(--custom-fg1) !important;
+    border: none !important;
+}
+
+.downloadButton,
+richlistitem[type="download"] {
+    background: none !important;
+    border: none !important;
+}
+
+.downloadButton:hover,
+richlistitem[type="download"]:hover {
+    background: none !important;
+}
+
+/* Input fields */
+input,
+textarea,
+textbox {
+    background-color: var(--custom-bg-darker) !important;
+    color: var(--custom-fg1) !important;
+    border: 1px solid var(--custom-bg3) !important;
+}
+
+input:focus,
+textarea:focus,
+textbox:focus {
+    border-color: var(--custom-bg4) !important;
+    box-shadow: none !important;
+}
+
+/* Selection */
+::selection {
+    background-color: var(--custom-selection) !important;
+    color: var(--custom-fg0) !important;
+}
+
+/* Separators */
+menuseparator,
+toolbarseparator {
+    border-color: var(--custom-bg3) !important;
+}
+
+/* Hide New Tab button */
+#tabs-newtab-button,
+#new-tab-button,
+.tabs-newtab-button {
+    display: none !important;
+}
+
+/* Make toolbar buttons slightly bigger */
+#nav-bar toolbarbutton,
+#PersonalToolbar toolbarbutton {
+    padding: 6px !important;
+}
+
+.toolbarbutton-icon {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+/* Remove urlbar page action boxes */
+#page-action-buttons,
+.urlbar-page-action {
+    background: none !important;
+    border: none !important;
+}
+
+#urlbar-container {
+    background: none !important;
+}
+
+/* Clean up urlbar icon backgrounds */
+.urlbar-icon,
+#tracking-protection-icon-container,
+#identity-box {
+    background: none !important;
+    border: none !important;
+    padding: 4px !important;
+}
+
+#identity-box:hover,
+.urlbar-icon:hover {
+    background-color: var(--custom-bg1) !important;
+    border-radius: 4px !important;
+}
+
+/* Remove Zen workspace boxes */
+#zen-workspaces-button,
+.zen-workspace-button,
+#zen-sidebar-icons-wrapper,
+.zen-sidebar-panel-header {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Remove box around workspace name */
+.zen-workspace-name,
+#zen-workspaces-button > label {
+    background: none !important;
+    border: none !important;
+}
+
+/* Clean sidebar panel boxes */
+.zen-sidebar-panel,
+#zen-sidebar-web-panel-wrapper {
+    background: transparent !important;
+    border: none !important;
+}
+
+/* Remove boxes from sidebar buttons/icons */
+.zen-sidebar-action-button,
+#zen-sidebar-top-buttons toolbarbutton,
+.webpanel-button {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.zen-sidebar-action-button:hover,
+#zen-sidebar-top-buttons toolbarbutton:hover,
+.webpanel-button:hover {
+    background-color: var(--custom-bg1) !important;
+    border-radius: 6px !important;
+}
+
+/* Nuclear option - remove ALL urlbar backgrounds but keep blur */
+#urlbar,
+#urlbar-background {
+    background-color: rgba(29, 32, 33, 0.9) !important;
+    background-image: none !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+}
+
+#urlbar[focused="true"],
+#urlbar[focused="true"] #urlbar-background {
+    background-color: rgba(29, 32, 33, 0.9) !important;
+    backdrop-filter: blur(25px) !important;
+    -webkit-backdrop-filter: blur(25px) !important;
+}
+
+#urlbar *:not(#urlbar-background),
+#urlbar-container,
+.urlbar-input-box,
+#urlbar-input-container {
+    background-color: transparent !important;
+    background-image: none !important;
+    background: none !important;
+}
+
+
+menupopup,
+menupopup *,
+panel,
+panel *,
+.panel-arrowcontent,
+menu,
+menuitem {
+    background-color: transparent !important;
+    background-image: none !important;
+    background: none !important;
+}
+
+
+.urlbarView-row,
+.urlbarView-row[selected],
+.urlbarView-row:hover,
+.urlbarView-row[selected] *,
+.urlbarView-row:hover *,
+.urlbarView-row-inner,
+.urlbarView-no-wrap,
+.urlbarView-url,
+.urlbarView-title,
+.urlbarView-tags,
+.urlbarView-action {
+    background-color: transparent !important;
+    background-image: none !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+#downloadsPanel *,
+.download-state,
+.downloadTarget,
+.downloadDetails {
+    background-color: transparent !important;
+    background-image: none !important;
+    background: none !important;
+}
+
+#downloads-button,
+#downloads-indicator,
+#downloads-indicator-anchor,
+#downloads-indicator-icon,
+toolbarbutton#downloads-button {
+    background: none !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Remove background from essentials container */
+#zen-essentials-container,
+.zen-essentials-container,
+#zen-sidebar-icons-wrapper {
+    background: none !important;
+    background-color: transparent !important;
+}
+
+/* Remove background from all essential tabs */
+.tabbrowser-tab[zen-essential="true"] {
+    background: none !important;
+    background-color: transparent !important;
+}
+
+.tabbrowser-tab[zen-essential="true"] .tab-background {
+    background: none !important;
+}
+
+/* Only show background on active/selected essential tab */
+.tabbrowser-tab[zen-essential="true"][selected="true"],
+.tabbrowser-tab[zen-essential="true"][selected="true"] .tab-background {
+    background-color: rgba(29, 32, 33, 0.9) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border-radius: 6px !important;
+}
