@@ -47,9 +47,9 @@ The theme includes backdrop blur effects that work on Zen's internal pages (sett
 
 ## Screenshots
 
-### GitHub Repository
-![GitHub Repository](screenshots/github-repo.png)
-*Clean GitHub interface with Gruvbox colors*
+### Context Menu
+![Context Menu](screenshots/github-repo.png)
+*(clean)*
 
 ### URL Dropdown Search
 ![URL Dropdown](screenshots/url-dropdown.png)
