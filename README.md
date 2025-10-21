@@ -92,8 +92,7 @@ The theme includes backdrop blur effects that work on Zen's internal pages (sett
 
 ### Other Websites
 ![W3Schools Example](screenshots/w3schools.png)
-*Theme works consistently across all websites*
-
+ -> ALL SCREENSHOTS TAKEN WITH DARKREADER ON <-
 ## Compatibility
 
 - **Browser:** Zen Browser (Firefox-based)
