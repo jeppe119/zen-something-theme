@@ -1,33 +1,16 @@
-# Zen Browser - Gruvbox Dark Theme
+# Zen Browser - Something Crappy Theme
 
-A clean, minimal Gruvbox dark theme for Zen Browser with transparent elements and no background boxes.
+A clean, minimal, crappy creamy, dark theme for Zen Browser with transparent elements and no background boxes.
 
 ## Features
 
-- **Gruvbox Dark color palette** - Matches popular editor themes
+- **Gruvbox Dark inspired color palette** - Matches popular editor themes
 - **90% opacity urlbar** with blur effect on internal pages
 - **Transparent menus** - No background boxes on right-click menus, dropdowns, or panels
 - **Clean status bar** - Compact link preview with matching urlbar style
 - **Minimal essentials** - Only active tab shows background
 - **No clutter** - Removed New Tab button, cleaned up all UI boxes
-- **Smooth hover effects** - Subtle highlights without distracting backgrounds
-
-## Color Palette
-
-Based on the Gruvbox Dark theme:
-
-- **Background:** `#191c1c` (custom darker variant)
-- **Darker areas:** `#1d2021`
-- **Foreground:** `#ebdbb2`
-- **Accent colors:**
-  - Red: `#fb4934`
-  - Green: `#b8bb26`
-  - Yellow: `#fabd2f`
-  - Blue: `#83a598`
-  - Purple: `#d3869b`
-  - Aqua: `#8ec07c`
-  - Orange: `#fe8019`
-  - Gray: `#928374`
+- **Minimal hover effects i use keyboard :-)** - Subtle highlights without distracting backgrounds
 
 ## Installation
 
@@ -106,7 +89,6 @@ The theme includes backdrop blur effects that work on Zen's internal pages (sett
 Find this section in `userChrome.css`:
 
 ```css
-/* Nuclear option - remove ALL urlbar backgrounds but keep blur */
 #urlbar,
 #urlbar-background {
     background-color: rgba(29, 32, 33, 0.9) !important;
@@ -148,4 +130,4 @@ MIT License - Feel free to modify and distribute!
 
 - Theme created for Zen Browser
 - Inspired by the Gruvbox color scheme by morhetz
-- Built with help from Claude (Anthropic)
+- Built with help from Claude my guy
