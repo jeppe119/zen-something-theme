@@ -110,7 +110,6 @@ All color variables are defined at the top of the file in the `:root` section. M
 
 ## Known Limitations
 
-- Backdrop blur only works on internal Zen pages, not on web content (Firefox/Zen security limitation)
 - Some UI elements may need adjustment depending on your Zen Browser version
 - Tested primarily on Linux; Windows/macOS may require minor tweaks
 

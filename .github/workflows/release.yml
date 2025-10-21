@@ -1,0 +1,47 @@
+name: Create Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: userChrome.css
+          body: |
+            ## Something Crappy Theme ${{ github.ref_name }}
+
+            Just download `userChrome.css` and throw it in your Zen profile's `chrome` folder.
+
+            Check the [README](https://github.com/${{ github.repository }}/blob/main/README.md) if you need help installing (it's pretty straightforward tho).
+
+            ### What you get
+            - userChrome.css (the whole theme in one file)
+            - Gruvbox-ish dark colors (crappy creamy style)
+            - 90% opacity urlbar that actually looks good
+            - No background boxes anywhere (I use keyboard anyway)
+            - Works great with Dark Reader
+
+            ### Quick install
+            1. Enable userChrome in about:config
+            2. Drop this in `~/.zen/[your-profile]/chrome/userChrome.css`
+            3. Restart Zen
+            4. Done
+
+            ---
+            *A chill theme by a chill dev - Built with help from Claude my guy* ¯\_(ツ)_/¯
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
