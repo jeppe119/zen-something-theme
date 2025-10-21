@@ -45,8 +45,6 @@ The theme includes backdrop blur effects that work on Zen's internal pages (sett
 2. Search for `layout.css.backdrop-filter.enabled`
 3. Set it to `true`
 
-**Note:** Backdrop blur cannot work over web content due to browser security architecture. The urlbar will have a solid 90% opacity background on regular websites.
-
 ## Screenshots
 
 ### GitHub Repository
@@ -57,9 +55,9 @@ The theme includes backdrop blur effects that work on Zen's internal pages (sett
 ![URL Dropdown](screenshots/url-dropdown.png)
 *Transparent dropdown with no background boxes*
 
-### Context Menu
-![Right-Click Menu](screenshots/context-menu.png)
-*Clean right-click menu with transparent background*
+### Plus Menu
+![Plus Menu](screenshots/context-menu.png)
+*That plus sign menu thing (also clean)*
 
 ### Hamburger Menu
 ![Hamburger Menu](screenshots/hamburger-menu.png)
