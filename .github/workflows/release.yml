@@ -24,7 +24,7 @@ jobs:
 
             Just download `userChrome.css` and throw it in your Zen profile's `chrome` folder.
 
-            Check the [README](https://github.com/${{ github.repository }}/blob/main/README.md) if you need help installing (it's pretty straightforward tho).
+            Check the [README](https://github.com/${{ github.repository }}/blob/master/README.md) if you need help installing (it's pretty straightforward tho).
 
             ### What you get
             - userChrome.css (the whole theme in one file)
