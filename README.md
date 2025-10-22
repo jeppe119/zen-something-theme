@@ -78,7 +78,6 @@ The theme includes backdrop blur effects that work on Zen's internal pages (sett
 
 - **Browser:** Zen Browser (Firefox-based)
 - **Tested on:** Linux
-- **Dark Reader:** Fully compatible
 
 ## Customization
 
@@ -125,6 +124,4 @@ MIT License - Feel free to modify and distribute!
 
 ## Credits
 
-- Theme created for Zen Browser
-- Inspired by the Gruvbox color scheme by morhetz
-- Built with help from Claude my guy
+- Built with ☕ Claude my guy
